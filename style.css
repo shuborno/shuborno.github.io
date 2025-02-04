@@ -36,6 +36,10 @@ nav a:hover {
     color: var(--main-text-hover-color);
 }
 
+nav.nav-sub-items {
+    background: #c9bea3;
+}
+
 .hero {
     background: var(--main-background-color);
 }
@@ -46,6 +50,8 @@ nav a:hover {
     height: 95vh;
     padding: 3rem calc((100vw - 1300px)) / 2);
 }
+
+
 
 .column-left {
     display: flex;
@@ -92,12 +98,94 @@ nav a:hover {
     padding: 0rem 2rem;
 }
 
+
 .hero-image {
     width: 90%;
 }
 
+.composition-art {
+    width: 90%;
+}
+
+.compositions-main {
+    padding-top: 3rem;
+    background: var(--main-background-color);
+}
+
+.composition-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px)) / 2);
+    margin-top: 1rem;
+}
+
+.composition-column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--main-text-color);
+    padding: 0rem 2rem;
+}
+
+.composition-column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.composition-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.composition-access {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.composition-access a {
+    color: black;
+}
+
+.composition-container h2 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.composition-details {
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+.composition-details a {
+    color: black;
+}
+
+.composition-details p {
+    display: block;
+}
+
+.composition-column-right {
+    display: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: -1rem 2rem;
+}
+
+.art-label {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    font-style:italic;
+    color: black;
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .composition-container {
         grid-template-columns: 1fr;
     }
 }
