@@ -126,6 +126,7 @@ nav.nav-sub-items {
     align-items: flex-start;
     color: var(--main-text-color);
     padding: 0rem 2rem;
+    background: var(--main-background-color);
 }
 
 .composition-column-left h1 {
@@ -179,6 +180,27 @@ nav.nav-sub-items {
     color: black;
     display: block;
 }
+
+.composer-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--main-text-color);
+    padding: 0rem 2rem;
+}
+
+.composer-column-left h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.composer-column-left p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 
 @media screen and (max-width: 768px) {
     .hero-container {
